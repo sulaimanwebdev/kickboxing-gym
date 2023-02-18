@@ -27,7 +27,7 @@ const Login = () => {
 <label htmlFor="checkbox" className='text-[#141414] cursor-pointer'>ログイン状態を保持</label>
 </div>
 
-<button className="w-full max-w-[150px] flex items-center justify-center mx-auto bg-[#D9D9D9] py-2.5 mt-16 text-[#8C8C8C] rounded-[2px]">ログイン</button>
+<Link to="/dashboard" className="w-full max-w-[150px] flex items-center justify-center mx-auto bg-[#D9D9D9] py-2.5 mt-16 text-[#8C8C8C] rounded-[2px]">ログイン</Link>
 
 <Link to="/" className='w-fit mx-auto flex text-center text-[#2F54EB] mt-5'>ホームページ</Link>
 

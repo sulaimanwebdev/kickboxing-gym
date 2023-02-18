@@ -58,7 +58,7 @@ const UserInvited = () => {
             <Link to="/" className='text-[#2F54EB]'>お問い合せ</Link>
         </div>
 
-        <div className='text-[#434343]'>Copyright (C) DTS KICKBOXING GYM 2022 All Rights Reserved</div>
+        <div className='text-center text-[#434343]'>Copyright (C) DTS KICKBOXING GYM 2022 All Rights Reserved</div>
       </div>
 
 
