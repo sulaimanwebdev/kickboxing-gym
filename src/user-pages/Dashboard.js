@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import Header from '../components/Header'
+import Header from '../user-components/Header'
 
 const Dashboard = () => {
    const [noBooking, setnoBooking] = useState(false);

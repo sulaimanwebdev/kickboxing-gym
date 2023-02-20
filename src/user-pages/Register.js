@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
-import Login from '../components/Login';
-import RegisterComp from '../components/Register';
+import Login from '../user-components/Login';
+import RegisterComp from '../user-components/Register';
 
 const Register = () => {
 
