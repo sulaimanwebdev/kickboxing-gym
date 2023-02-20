@@ -1,5 +1,8 @@
 import {useState} from 'react'
 import Header from '../user-components/Header'
+import CalendarNoButton from '../user-components/Calendar-No-Button'
+import CalendarWithButton from '../user-components/Calendar-With-Button'
+
 
 const Dashboard = () => {
    const [noBooking, setnoBooking] = useState(false);
@@ -71,7 +74,7 @@ const Dashboard = () => {
           }
         </div>
 
-
+        
           {
             noBooking === true
             ?
@@ -82,38 +85,12 @@ const Dashboard = () => {
               <div className='text-[#F5222D] mt-6'>レッスンをキャンセルまた完了しない時は、新しいレッスンを予約できません。</div>
 
              <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 w-full mt-5'>
-                <div className='min-h-[135px] text-center p-3 bg-[#F0F5FF] border border-[#ADC6FF]'>
-                  <div className='text-[#141414]'>18:00</div>
-                  <div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div>
-                </div>
-
-                <div className='min-h-[135px] text-center p-3 border border-[#ADC6FF]'>
-                  <div className='text-[#141414]'>19:30</div>
-                  <div className="flex items-center justify-center gap-2"><input type="radio" /><div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div></div>
-                  <button onClick={()=> {setcancelConfirm(true)}} className="w-full bg-white py-1 border-2 border-[#2F54EB] text-[#2F54EB] rounded-[4px] mx-auto mt-4">予約</button>
-                </div>
-
-
-                <div className='min-h-[135px] text-center p-3 border border-[#ADC6FF]'>
-                  <div className='text-[#141414]'>19:30</div>
-                  <div className="flex items-center justify-center gap-2"><input type="radio" /><div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div></div>
-                  <button onClick={()=> {setcancelConfirm(true)}} className="w-full bg-white py-1 border-2 border-[#2F54EB] text-[#2F54EB] rounded-[4px] mx-auto mt-4">予約</button>
-                </div>
-
-                <div className='min-h-[135px] text-center p-3 border border-[#ADC6FF] bg-[#F0F5FF]'>
-                  <div className='text-[#141414]'>18:00</div>
-                  <div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div>
-                </div>
-
-                <div className='min-h-[135px] text-center p-3 border border-[#ADC6FF] bg-[#F0F5FF]'>
-                  <div className='text-[#141414]'>18:00</div>
-                  <div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div>
-                </div>
-
-                <div className='min-h-[135px] text-center p-3 border border-[#ADC6FF] bg-[#F0F5FF]'>
-                  <div className='text-[#141414]'>18:00</div>
-                  <div className='font-bold text-[20px] text-[#141414] mt-1'>満員</div>
-                </div>
+             <CalendarNoButton/>
+             <CalendarNoButton/>
+             <CalendarWithButton setcancelConfirm={setcancelConfirm}/>
+             <CalendarWithButton setcancelConfirm={setcancelConfirm}/>
+             <CalendarWithButton setcancelConfirm={setcancelConfirm}/>
+             <CalendarNoButton/>
 
 
  
