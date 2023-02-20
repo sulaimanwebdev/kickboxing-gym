@@ -4,6 +4,7 @@ import UserInvited from './user-pages/UserInvited';
 import Register from './user-pages/Register';
 import Dashboard from './user-pages/Dashboard';
 import Calendar from "./user-pages/Calendar";
+import AccountManagment from "./user-pages/Account-Managment";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
          <Route exact path="/register" element={<Register/>} />
          <Route exact path="/dashboard" element={<Dashboard/>} />
          <Route exact path="/calendar" element={<Calendar/>} />
+         <Route exact path="/account-managment" element={<AccountManagment/>} />
          
          </Routes>
        </Router>
