@@ -30,7 +30,7 @@ const Calendar = () => {
             week === 1
             ?
             <>
-            <div className='hidden 3lg:grid grid-cols-7 w-full mt-7'>
+            <div className='grid grid-cols-3 gap-3 sm:grid-cols-7 w-full mt-7'>
           <div className='flex items-center justify-center text-[#434343]'>19(月)</div>
           <div className='flex items-center justify-center text-[#434343]'>20(火)</div>
           <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB]'>21(水)</div>
@@ -56,7 +56,7 @@ const Calendar = () => {
             :
 
             <>
-            <div className='hidden 3lg:grid grid-cols-7 w-full mt-7'>
+            <div className='grid grid-cols-3 gap-3 sm:grid-cols-7 w-full mt-7'>
           <div className='flex items-center justify-center text-[#434343]'>26(月)</div>
           <div className='flex items-center justify-center text-[#434343]'>27(火)</div>
           <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB]'>28(水)</div>
