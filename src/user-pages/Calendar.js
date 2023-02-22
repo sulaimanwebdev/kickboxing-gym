@@ -20,9 +20,9 @@ const Calendar = () => {
       {
         confirmation === false ?
         <div className='bg-white p-5'>
-        <div className="flex items-center justify-between w-full mb-6">
+        <div className="flex items-center justify-between w-full mb-16 3sm:mb-6">
           <button onClick={()=> {setweek(1)}} className='flex items-center text-[#2F54EB] gap-2 flex-row-reverse'>先週<svg width="10" height="15" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.8987 1.98424V0.927406C6.8987 0.835805 6.79343 0.785219 6.72233 0.841273L0.559053 5.65514C0.506687 5.69586 0.464315 5.74801 0.435168 5.8076C0.406021 5.86719 0.390869 5.93265 0.390869 5.99899C0.390869 6.06532 0.406021 6.13079 0.435168 6.19038C0.464315 6.24997 0.506687 6.30211 0.559053 6.34284L6.72233 11.1567C6.7948 11.2128 6.8987 11.1622 6.8987 11.0706V10.0137C6.8987 9.94674 6.86726 9.88248 6.8153 9.84147L1.89343 5.99967L6.8153 2.15651C6.86726 2.11549 6.8987 2.05123 6.8987 1.98424V1.98424Z" fill="#2F54EB"/></svg></button>
-          <div className='text-[18px] text-[#434343]'>12月19日〜12月25日</div>
+          <div className='4sm:text-[18px] text-[#434343] -mb-20 3sm:mb-0'>12月19日〜12月25日</div>
           <button onClick={()=> {setweek(2)}} className='flex items-center text-[#2F54EB] gap-2'>次週<svg width="10" height="15" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.45949 6.55692L0.535291 0.367666C0.514585 0.351365 0.489701 0.341234 0.463496 0.338438C0.437292 0.335641 0.41083 0.340292 0.38715 0.351857C0.36347 0.363422 0.343532 0.381431 0.329626 0.403816C0.31572 0.426202 0.308409 0.452056 0.308534 0.478409V1.8372C0.308534 1.92333 0.348964 2.00595 0.415761 2.05868L6.74387 6.99989L0.415761 11.9411C0.347206 11.9938 0.308534 12.0765 0.308534 12.1626V13.5214C0.308534 13.6392 0.443885 13.7042 0.535291 13.6321L8.45949 7.44286C8.52684 7.39033 8.58132 7.32312 8.6188 7.24636C8.65627 7.1696 8.67575 7.08531 8.67575 6.99989C8.67575 6.91448 8.65627 6.83018 8.6188 6.75342C8.58132 6.67666 8.52684 6.60946 8.45949 6.55692Z" fill="#2F54EB"/></svg></button>
         </div>
 
@@ -30,7 +30,7 @@ const Calendar = () => {
             week === 1
             ?
             <>
-            <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 w-full mt-7'>
+            <div className='hidden 3lg:grid grid-cols-7 w-full mt-7'>
           <div className='flex items-center justify-center text-[#434343]'>19(月)</div>
           <div className='flex items-center justify-center text-[#434343]'>20(火)</div>
           <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB]'>21(水)</div>
@@ -40,7 +40,7 @@ const Calendar = () => {
           <div className='flex items-center justify-center text-[#F5222D]'>25(日)</div>
         </div>
 
-        <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 w-full mt-3'>
+        <div className='grid grid-cols-1 3sm:grid-cols-2 4sm:grid-cols-3 4md:grid-cols-4 3md:grid-cols-5 3lg:grid-cols-7 w-full mt-3'>
         {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((data,index)=>{
           return (
                 <>
@@ -56,7 +56,7 @@ const Calendar = () => {
             :
 
             <>
-            <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 w-full mt-7'>
+            <div className='hidden 3lg:grid grid-cols-7 w-full mt-7'>
           <div className='flex items-center justify-center text-[#434343]'>26(月)</div>
           <div className='flex items-center justify-center text-[#434343]'>27(火)</div>
           <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB]'>28(水)</div>
@@ -66,7 +66,7 @@ const Calendar = () => {
           <div className='flex items-center justify-center text-[#F5222D]'>1(日)</div>
         </div>
 
-        <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 w-full mt-3'>
+        <div className='grid grid-cols-1 3sm:grid-cols-2 4sm:grid-cols-3 4md:grid-cols-4 3md:grid-cols-5 3lg:grid-cols-7 w-full mt-3'>
         {[1,2,3,4].map((data,index)=>{
           return (
                 <>

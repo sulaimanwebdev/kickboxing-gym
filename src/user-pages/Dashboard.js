@@ -84,7 +84,7 @@ const Dashboard = () => {
               <div className='w-full text-[#434343] border-b border-[#F0F0F0] pb-4 mb-6'>本日　2022年12月21日(水)　の空き状況</div>
               <div className='text-[#F5222D] mt-6'>レッスンをキャンセルまた完了しない時は、新しいレッスンを予約できません。</div>
 
-             <div className='grid grid-cols-1 3sm:grid-cols-3 2sm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 w-full mt-5'>
+             <div className='grid grid-cols-1 2sm:grid-cols-3 sm:grid-cols-4 2md:grid-cols-5 lg:grid-cols-6 w-full mt-5'>
              <CalendarNoButton/>
              <CalendarNoButton/>
              <CalendarWithButton setconfirmation={setconfirmation}/>
