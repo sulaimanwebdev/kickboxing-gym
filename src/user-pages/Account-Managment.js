@@ -6,6 +6,8 @@ const AccountManagment = () => {
     const [tab, settab] = useState(1)
     const [addcoupon, setaddcoupon] = useState(true)
     const [showModal, setshowModal] = useState(false)
+    const [dropdown, setdropdown] = useState(false)
+    const [dropdownValue, setdropdownValue] = useState("週三会員1")
 
   return (
     <>
@@ -131,11 +133,18 @@ const AccountManagment = () => {
 
           <div className='mt-6'>
             <div className='text-[#434343] mb-2'>会員タイプ</div>
-            <div className="max-w-[300px] flex items-center gap-3 w-full border border-[#ADC6FF] bg-white text-[#141414] rounded-[2px] px-2 ">
-             <input type="text" placeholder='週三会員' className='w-full h-full py-2 placeholder-[#D9D9D9] text-[#141414] outline-none' />
+            <div onClick={()=> {setdropdown(!dropdown)}} className="relative cursor-pointer max-w-[300px] flex items-center gap-3 w-full border border-[#ADC6FF] bg-white text-[#141414] rounded-[2px] px-2 ">
+             <div className='flex items-center text-[#434343] h-[40px] w-full'>{dropdownValue}</div>
              <button><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8126 0H10.6407C10.561 0 10.486 0.0390626 10.4391 0.103125L6.00008 6.22188L1.56101 0.103125C1.51414 0.0390626 1.43914 0 1.35945 0H0.187576C0.0860133 0 0.0266383 0.115625 0.0860133 0.198438L5.59539 7.79375C5.79539 8.06875 6.20476 8.06875 6.4032 7.79375L11.9126 0.198438C11.9735 0.115625 11.9141 0 11.8126 0Z" fill="#2F54EB"/></svg></button>
+            
+            <div className={`absolute top-full left-0 w-full max-h-[300px] h-fit overflow-y-auto p-2 bg-white border border-[#ADC6FF] rounded-[2px] ${dropdown === true ? "block" : "hidden"}`}>
+            <div onClick={()=> {setdropdownValue("週三会員1")}} className='flex items-center text-[#434343] h-[30px] w-full'>週三会員1</div>
+            <div onClick={()=> {setdropdownValue("週三会員2")}} className='flex items-center text-[#434343] h-[30px] w-full'>週三会員2</div>
+            <div onClick={()=> {setdropdownValue("週三会員3")}} className='flex items-center text-[#434343] h-[30px] w-full'>週三会員3</div>
+
             </div>
-          </div>
+            </div>
+            </div>
 
         
 
