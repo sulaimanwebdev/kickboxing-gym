@@ -9,7 +9,7 @@ const Calendar = () => {
    const [week, setweek] = useState(1);
    const [finish, setfinish] = useState(false);
 
-  return (
+   return (
     <>
       {
         finish === false
@@ -30,17 +30,17 @@ const Calendar = () => {
             week === 1
             ?
             <>
-            <div className='grid grid-cols-1 gap-3 sm:grid-cols-7 w-full mt-7'>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>19(月)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>20(火)</div>
-          <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB] w-[40%] mx-auto sm:w-full'>21(水)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>22(木)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>23(金)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>24(土)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#F5222D]'>25(日)</div>
+            <div className='grid grid-cols-1 4md:grid-cols-7 w-full mt-7'>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>19(月)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>20(火)</div>
+          <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB] w-[40%] mx-auto 4md:w-full'>21(水)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>22(木)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>23(金)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>24(土)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#F5222D]'>25(日)</div>
         </div>
 
-        <div className='grid grid-cols-1 3sm:grid-cols-2 4sm:grid-cols-3 4md:grid-cols-4 3md:grid-cols-5 3lg:grid-cols-7 w-full mt-3'>
+        <div className='grid grid-cols-1 4md:grid-cols-7 w-full mt-3'>
         {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((data,index)=>{
           return (
                 <>
@@ -56,17 +56,18 @@ const Calendar = () => {
             :
 
             <>
-            <div className='grid grid-cols-1 gap-3 sm:grid-cols-7 w-full mt-7'>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>26(月)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>27(火)</div>
-          <div className='flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB] w-[40%] mx-auto sm:w-full'>28(水)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>29(木)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>30(金)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#434343]'>31(土)</div>
-          <div className='hidden sm:flex items-center justify-center text-[#F5222D]'>1(日)</div>
+            <div className='grid grid-cols-1 4md:grid-cols-7 w-full mt-7'>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>26(月)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>27(火)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB] w-[40%] mx-auto 4md:w-full'>28(水)</div>
+          <div className='flex 4md:hidden items-center justify-center text-[#434343] pt-2 border-t-2 border-[#2F54EB] w-[40%] mx-auto 4md:w-full'>22(月)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>29(木)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>30(金)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#434343]'>31(土)</div>
+          <div className='hidden 4md:flex items-center justify-center text-[#F5222D]'>1(日)</div>
         </div>
 
-        <div className='grid grid-cols-1 3sm:grid-cols-2 4sm:grid-cols-3 4md:grid-cols-4 3md:grid-cols-5 3lg:grid-cols-7 w-full mt-3'>
+        <div className='grid grid-cols-1 4md:grid-cols-7 w-full mt-3'>
         {[1,2,3,4].map((data,index)=>{
           return (
                 <>
